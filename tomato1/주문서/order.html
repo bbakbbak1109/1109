@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>상품 주문서</h1>
+    <form>
+        <fieldset>
+            <legend>개인 정보</legend>
+           <ul>
+                <li>
+                    <label for="uname" class="title">주문자 이름</label>
+                    <input type="text" id="uname">
+                </li>
+                <li>
+                    <label for="uname" class="title">전화번호</label>
+                    <input type="text" id="uname" placeholder="번호만 입력">
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+    <br>
+    <form>
+        <fieldset>
+            <legend>배송 정보</legend>
+           <ul>
+                <li>
+                    <label for="uname" class="title">배송 옵션 :</label>
+                    <label><input type="radio" name="subject">기존 배송지</label>
+                    <label><input type="radio" name="subject">새 배송지</label>
+                </li>
+                <li>
+                    <label for="uname" class="title">주소</label>
+                    <input type="text" id="uname">
+                </li>
+                <li>
+                    <label for="uname" class="title">요청사항</label>
+                    <select>
+                        <option>요청사항을 선택하세요.</option>
+                    </select>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+    <br>
+    <form>
+        <fieldset>
+            <legend>주문 정보</legend>
+                상품<br>
+                    <labe><input type="checkbox">방울토마토1kg<s>10,000</s><b>8,000원</b><input type="text">박스</labe><br>
+                    <labe><input type="checkbox">방울토마토2kg<s>20,000</s><b>16,000원</b><input type="text">박스</labe><br>
+                    <labe><input type="checkbox">방울토마토3kg<s>30,000</s><b>24,000원</b><input type="text">박스</labe><br>     
+                    <lable for="comment" class="title">기타사항</lable>
+                    <textarea cols="40" rows="3" id="comment"></textarea>
+        </fieldset>
+    </form>
+    <br>
+    <form>
+        <fieldset>
+            <legend>배송 정보</legend>
+           <ul>
+                <li>
+                    <label><input type="radio" name="subject">계좌 이체</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="subject">카드 결제</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="subject">일반 결제</label>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+    <br>
+    <input type="submit" value="초기화">
+    <input type="submit" value="결제하기">
+</body>
+</html>
